@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ¡Feliz cum damix aparrito!🎉</title>
+    <style>
+        /* Aquí va el CSS */
+        body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #0f172a, #020617, #1e293b);
+    background-size: 300% 300%;
+    animation: fondo-tecno 10s infinite alternate;
+    color: #e5e7eb;
+    font-family: monospace;
+    }
+    @keyframes fondo-tecno {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+    }
+.contenedor-boton {
+    display:flex;
+    align-items: center;        /* centra vertical */
+    justify-content: center;    /* centra horizontal */
+    height: 100vh;              /* ocupa toda la pantalla */
+}
+.boton-rojo {
+    background-color: #ff1a1a;
+    color: white;
+    border: 3px solid #660000;
+    border-radius: 999px;
+    padding: 20px 60px;
+    font-size: 24px;
+    font-family: monospace;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+    transition: transform 0.15s, box-shadow 0.15s, background-color 0.15s;
+}
+
+
+.boton-rojo:hover {
+    transform: scale(1.08);
+    background-color: #ff4d4d;
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.9);
+
+}
+
+
+.boton-rojo:active {
+    transform: scale(0.95);
+    background-color: #c00;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+    </style>
+</head>
+<body>
+    <div class="contenedor-boton">
+        <button class="boton-rojo" onclick="location.href='pagina2.html'">
+            DONT TOUCH
+            </button>
+    </div>
+</body>
+    </html>
